@@ -22,6 +22,7 @@ class XMLHttpRequest extends Events.EventTarget
     @statusText   = null
     @responseText = null
     @responseXML  = null
+    @withCredentials = false
 
     # XHR events need the first to dispatch, the second to propagate up to window
     @_ownerDocument = window.document
